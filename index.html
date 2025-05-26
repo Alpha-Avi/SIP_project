@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>translator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="translator.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="app-header">
+        <div class="logo">🌐 Global Translator</div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#license">License</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="test">
+            <textarea name="" id="fromText" placeholder="Enter Text" resize="disabled"></textarea>
+            <textarea name="" id="toText" placeholder="translation" readonly resize="disabled"></textarea>
+        </div>
+        <div class="selectArea">
+            <div class="select01">
+                <i class="fa-solid fa-volume-high volume" id="from"></i>
+                <i class="fa-solid fa-copy copy" id="from"></i>
+                 <select id="select_one">
+                    <option value="en">English</option>
+                 </select>
+            </div>
+            <div class="select02">
+                <i class="fa-solid fa-volume-high volume" id="to"></i>
+                <i class="fa-solid fa-copy copy" id="to"></i>
+                 <select id="select_sec">
+                     <option value="hi">Hindi</option>
+                 </select>
+            </div>
+        </div>
+        <button id="translate">translate</button>
+    </div>
+    
+    <footer class="footer">
+        <div id="about">
+            <h3>About</h3>
+            <p>LingoFlow is a free, browser-based text translator powered by open APIs like LibreTranslate.</p>
+        </div>
+        <div id="features">
+            <h3>Features</h3>
+            <ul>
+                <li>Text translation</li>
+                <li>Multi-language support</li>
+                <li>Copy and speak translated text</li>
+            </ul>
+        </div>
+        <div id="license">
+            <h3>License</h3>
+            <p>Uses <a href=\"https://libretranslate.com\">LibreTranslate</a> (open-source) and Font Awesome icons.</p>
+        </div>
+        <div id="contact">
+            <h3>Contact</h3>
+            <p>Questions or feedback? Email us at <a href=\"mailto:lingoflow@app.com\">lingoflow@app.com</a></p>
+        </div>
+    </footer>
+    <script src="countries.js"></script>
+    <script src="translator.js"></script>
+</body>
+</html>
